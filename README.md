@@ -9,6 +9,7 @@ Technical Test Problem Statement #2
 
     SquareHouse.java is the Main class
 
-SquareHouse.java Test Problem Statement #3
+
+Technical Test Problem Statement #3
 
     AirportApronAllotment.java is the Main class
