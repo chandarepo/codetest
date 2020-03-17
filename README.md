@@ -7,7 +7,7 @@ Technical Test Problem Statement #1
 
 Technical Test Problem Statement #2
 
-    AirportApronAllotment is the Main class
+    SquareHouse.java is the Main class
 
 SquareHouse.java Test Problem Statement #3
 
