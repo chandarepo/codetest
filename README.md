@@ -1,11 +1,5 @@
 # codetest
 
-Expectations:-
-	•	Use any of these programming languages - Python, GoLang, Java or C/C++
-	•	Code should be neat with necessary abstractions, error handling and comments
-	•	Write unit test cases to validate the correctness of code
-	•	Do not make these problem statements or your solution publicly available, for example, on GitHub or by posting it to a blog.
-
 Technical Test Problem Statement #1
 
 Implement an in-memory caching library to store (key, value) objects for faster retrieval. Key requirements of the library are as follows:
@@ -30,18 +24,18 @@ Output: the biggest number represent the area of the house
 
 Example1:
 Input:
-0	0	3	3	0
-0	1	3	3	0
-1	3	3	3	0
+0	0	3	3	0,
+0	1	3	3	0,
+1	3	3	3	0,
 0	0	2	1	0
 
 should have output : 4
 
 Example2:
 Input:
-0	3	3	3	0
-2	3	3	3	3
-1	3	3	3	2
+0	3	3	3	0,
+2	3	3	3	3,
+1	3	3	3	2,
 0	0	2	1	0
 
 should have output : 9
