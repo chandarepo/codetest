@@ -2,9 +2,10 @@ package com.finco.cache;
 
 import java.util.Comparator;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 public class LRUCacheTest {
-    public static void main(String... args) {
+    public static void main(String... args)  throws InterruptedException{
 
         LRUCache<Integer, String> cache = new LRUCache<>(5);
         for (int i = 1; i < 10; i++) {
@@ -28,5 +29,10 @@ public class LRUCacheTest {
         cache.put(42, "meaning of life", 10);
         // entry 7 is gone too
         System.out.println("cache = " + cache);
+        TimeUnit.SECONDS.sleep(5);
+
+        for (int i = 1; i < 14; i++) {
+            System.out.println(cache.get(i));
+        }
     }
 }

@@ -19,7 +19,7 @@ public class LRUCache <K, V> extends LinkedHashMap<K, V>  implements Solution<K,
 
     public V put(K k , V v , Integer secondsToSleep){
         if(0 == secondsToSleep) throw new IllegalArgumentException();
-        //ttlMap.put(k,secondsToSleep);
+        V _v = put(k,v);
         new Thread(() -> {
             try {
                 TimeUnit.SECONDS.sleep(secondsToSleep);
@@ -29,7 +29,7 @@ public class LRUCache <K, V> extends LinkedHashMap<K, V>  implements Solution<K,
                 remove(k); //to_fix
             }
         }).start();
-       return put(k,v);
+       return _v;
     }
 
     @Override
