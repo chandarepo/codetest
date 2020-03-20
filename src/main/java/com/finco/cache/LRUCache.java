@@ -17,15 +17,14 @@ public class LRUCache <K, V> extends LinkedHashMap<K, V>  implements Solution<K,
         this.lruSize = lruSize;
     }
 
-    public V put(K k , V v , Integer secondsToSleep){
-        if(0 == secondsToSleep) throw new IllegalArgumentException();
+    public V put(K k , V v , Integer secondsToAlive){
+        if(0 == secondsToAlive) throw new IllegalArgumentException();
         V _v = put(k,v);
         new Thread(() -> {
             try {
-                TimeUnit.SECONDS.sleep(secondsToSleep);
+                TimeUnit.SECONDS.sleep(secondsToAlive);
                 remove(k);
             } catch (InterruptedException ie) {
-                //Thread.currentThread().interrupt();
                 remove(k); //to_fix
             }
         }).start();

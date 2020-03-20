@@ -20,7 +20,7 @@ public class LRUCacheTest {
         System.out.println("cache = " + cache);
 
         for (int i = 10; i < 14; i++) {
-            cache.put(i, "hi", i);
+            cache.put(i, "hi", 10);
         }
         // entries 5,6,8,9 have been removed (eldest entries)
         // entry 7 is at the beginning now

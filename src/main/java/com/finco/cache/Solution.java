@@ -15,5 +15,5 @@ Key requirements of the library are as follows:
 
  */
 public interface Solution<K, V, Integer> {
-    public V put(K k, V v, Integer time);
+    public V put(K k, V v, Integer secondsToAlive);
 }
