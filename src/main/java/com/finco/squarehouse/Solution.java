@@ -49,4 +49,5 @@ public interface Solution {
         }
         return maxSquareLength * maxSquareLength;
     }
+    public int  maximalSquare( int[][] matrix);
 }
